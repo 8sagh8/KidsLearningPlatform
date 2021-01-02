@@ -39,10 +39,17 @@ app.post("/newTable", (req, res) => {
     let t9 = req.body.formNumberTableInput * 9
     let t10 = req.body.formNumberTableInput * 10
 
+    // if Learn then true , if Test then false
+    let tableRadio = true;
+
+    if (req.body.formLearnTestRadio == "Test") {
+        tableRadio = false;
+    }
 
     res.render('newTable', {
         userName: req.body.formUserNameInput,
         tableNum: req.body.formNumberTableInput,
+        tableRadio: tableRadio,
         t1: t1,
         t2: t2,
         t3: t3,
