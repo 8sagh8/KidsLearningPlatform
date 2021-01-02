@@ -1,13 +1,11 @@
 
 <div class="alignDivCenter">
-    <h1>Hello we are here NEW TABLE</h1>
-    <br><br>
 
-    <h3>Welcome kid: {{userName}}</h3>
-    <h5>Learn Table of {{tableNum}}</h5>
-    <br>
 
     {{#if tableRadio}}
+        <h1>{{userName}}, Welcome to Learning Center</h1>
+        <h5>Time to Learn Table of {{tableNum}}</h5>
+        <br>
         <table class="table">
 
             <tbody>
@@ -89,7 +87,10 @@
             </tbody>
         </table>   
     {{else}}
-        <form action="#" method="">
+        <h1>{{userName}} welcome to Test Center</h1>
+        <h5>Complete Table of {{tableNum}}</h5>
+        <br>
+        <form action="testResult" method="post">
             <table class="table">
                 <thead>
                     <th>Number</th>
@@ -97,7 +98,6 @@
                     <th>Count</th>
                     <th>=</th>
                     <th>Multiplication</th>
-                    <th>Result</th>
                 </thead>
 
                 <tbody>
@@ -108,8 +108,7 @@
                         <td>x</td>
                         <td>1</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv1" /></td>
                     </tr>
 
                     <tr class="table-primary">
@@ -117,76 +116,68 @@
                         <td>x</td>
                         <td>2</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv2" /></td>
                     </tr>
                     <tr class="table-secondary">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>3</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv3" /></td>
                     </tr>
                     <tr class="table-success">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>4</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv4" /></td>
                     </tr>
                     <tr class="table-danger">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>5</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv5" /></td>
                     </tr>
                     <tr class="table-warning">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>6</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv6" /></td>
                     </tr>
                     <tr class="table-info">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>7</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv7" /></td>
                     </tr>
                     <tr class="table-light">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>8</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv8" /></td>
                     </tr>
                     <tr class="table-success">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>9</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv9" /></td>
                     </tr>
                     <tr class="table-danger">
                         <td>{{tableNum}}</td>
                         <td>x</td>
                         <td>10</td>
                         <td>=</td>
-                        <td><input type="number" id="uv1" /></td>
-                        <td></td>
+                        <td><input type="number" name="uv10" /></td>
                     </tr>
             
                 </tbody>
-            </table>   
+            </table>
+            <button type="submit" class="btn btn-primary">Submit Test</button> 
         </form>
     {{/if}}
     
