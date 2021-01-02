@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "kid_learning_platform",
+  "version": "1.0.0",
+  "description": "platform is built for kids to learn in free and enjoyable mode",
+  "main": "server.js",
+  "author": "Sammar Abbas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  }
+}
