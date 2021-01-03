@@ -44,10 +44,6 @@ app.post("/newTable", (req, res) => {
     userName = req.body.formUserNameInput;
     tableNum = req.body.formNumberTableInput;
 
-    console.log("Name of kid: " + userName);
-    console.log("Table Number: " + tableNum);
-    console.log("Learn of Test type: " + req.body.formLearnTestRadio);
-
     // calculate table
     t1 = tableNum * 1
     t2 = tableNum * 2
@@ -114,42 +110,52 @@ app.post("/testResult", (req, res) => {
     let totalScore = 0;
 
     if (uv1 == t1) {
+        t1 = null;
         ur1 = true;
         totalScore = totalScore + 1;
     }
     if (uv2 == t2) {
+        t2 = null;
         ur2 = true;
         totalScore = totalScore + 1;
     }
     if (uv3 == t3) {
+        t3 = null;
         ur3 = true;
         totalScore = totalScore + 1;
     }
     if (uv4 == t4) {
+        t4 = null;
         ur4 = true;
         totalScore = totalScore + 1;
     }
     if (uv5 == t5) {
+        t5 = null;
         ur5 = true;
         totalScore = totalScore + 1;
     }
     if (uv6 == t6) {
+        t6 = null;
         ur6 = true;
         totalScore = totalScore + 1;
     }
     if (uv7 == t7) {
+        t7 = null;
         ur7 = true;
         totalScore = totalScore + 1;
     }
     if (uv8 == t8) {
+        t8 = null;
         ur8 = true;
         totalScore = totalScore + 1;
     }
     if (uv9 == t9) {
+        t9 = null;
         ur9 = true;
         totalScore = totalScore + 1;
     }
     if (uv10 == t10) {
+        t10 = null;
         ur10 = true;
         totalScore = totalScore + 1;
     }
