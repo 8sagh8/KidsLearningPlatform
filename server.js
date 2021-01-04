@@ -200,6 +200,11 @@ app.post("/testResult", (req, res) => {
     });
 });
 
+// Arabic Alphabets Page
+app.get("/arabicAlpha", (req, res) => {
+    res.render("arabicAlpha");
+});
+
 app.get("/arithmeticMath", (req, res) => {
     res.render('arithmeticMath');
 });
